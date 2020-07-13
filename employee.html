@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function display()
+{
+var empid = document.getElementById('empid').value;
+document.getElementById('output').innerHTML=empid;
+
+
+var empname = document.getElementById('empname').value;
+document.getElementById('output').innerHTML=empname;
+
+var empsal = document.getElementById('empsal').value;
+document.getElementById('output').innerHTML=empsal;
+
+document.write(+empid+ "<br>"+empname+ "<br>"+empsal);
+
+}
+</script>
+</head>
+<body>
+<h1 align="Center">
+
+</h1>
+<form name="Employee" method="post" onsubmit="display()">
+
+empid:<input type="text" name="empid" id="empid"></input>
+<br/>
+
+empname:<input type="text" name="empname" id="empname"></input>
+<br/>
+
+empsal:<input type="text" name="empsal" id="empsal"></input>
+<br/>
+
+
+<input type="Submit" onclick="display()"></input>
+<div id="output">
+
+</div>
+
+</body>
+</html>
+
+
